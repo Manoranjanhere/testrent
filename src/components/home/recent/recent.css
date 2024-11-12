@@ -1,0 +1,45 @@
+.recent {
+  padding: 20px; /* Adjust padding for the section */
+}
+
+.recent-container {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping to new rows */
+  justify-content: space-between; /* Space between items */
+}
+
+.recent-card {
+  flex: 0 1 calc(30% - 20px); /* Each card takes up 30% of the row width minus margins */
+  margin: 10px; /* Add some margin for spacing */
+  border: 1px solid #e4e8f3; /* Border for visibility */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  overflow: hidden; /* Prevent overflow */
+  max-width: 600px; /* Set a maximum width for medium-sized cards */
+}
+
+.recent-card img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.recent-card .text {
+  padding: 15px; /* Padding for the text area */
+}
+
+.recent-card h4 {
+  font-size: 18px; /* Adjust font size */
+}
+
+.recent-card p {
+  font-size: 14px; /* Adjust font size */
+}
+
+.recent-card .button {
+  padding: 10px; /* Adjust padding for button */
+  text-align: center; /* Center the button */
+}
+.recent-card:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+  transition: transform 0.3s ease; /* Smooth transition effect */
+}

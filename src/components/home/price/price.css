@@ -1,0 +1,90 @@
+/* Global styles */
+body {
+  background-color: black; /* Entire page background */
+  color: white; /* Text color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Price Section Styles */
+.price {
+  padding: 40px 0;
+  background-color: rgba(255, 255, 255, 0.1); /* Optional: transparent white */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+.price {
+  text-align: center;
+}
+.price .content .box {
+  width: 31.5%;
+  padding: 30px;
+  border-radius: 10px;
+}
+.price button {
+  margin-bottom: 20px;
+}
+.price .box:nth-child(1) .topbtn button,
+.price .box:nth-child(3) .topbtn button {
+  display: none;
+}
+.price h3 {
+  font-size: 22px;
+}
+.price h1 {
+  font-size: 60px;
+}
+.price h1 span {
+  font-size: 30px;
+  font-weight: 500;
+}
+.price ul {
+  margin-top: 40px;
+}
+.price ul li {
+  display: flex;
+  margin-bottom: 20px;
+}
+.price label {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.price .btn5 {
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .price .content {
+    flex-direction: column;
+  }
+
+  .price .content .box {
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
+}
+.price-card {
+  background-color: violet; /* Set the card background color to violet */
+  border-radius: 6px; /* Maintain rounded corners */
+  box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%); /* Existing shadow effect */
+  text-align: center; /* Center the text */
+  padding: 30px; /* Maintain padding */
+  cursor: pointer; /* Pointer on hover */
+  transition: transform 0.2s; /* Add transition for hover effect */
+}
+
+.price-card:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Additional styles for text color if needed */
+.price-card h3,
+.price-card h1,
+.price-card p {
+  color: white; /* Change text color to white for better contrast */
+}

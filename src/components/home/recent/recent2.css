@@ -1,0 +1,109 @@
+.container {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: black;
+  border: 1px solid #334155; /* Slate 800 color */
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+.description {
+  color: #94a3b8; /* Slate 400 color */
+  margin-bottom: 1rem;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.button {
+  width: 100%;
+  background-color: #16a34a; /* Green 600 color */
+  padding: 0.75rem 1rem;
+  border-radius: 9999px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #15803d; /* Green 700 color */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem; /* Gap of 6 (1.5rem) between grid items */
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+  }
+}
+
+.page-container {
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  padding: 3rem 1rem;
+}
+
+.content-wrapper {
+  max-width: 80rem; /* 7xl size */
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 2.5rem; /* 4xl */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #94a3b8; /* Slate 400 */
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 3rem; /* 5xl for medium screens */
+  }
+}
+
+.description {
+  font-size: 1.125rem; /* lg */
+  text-align: center;
+  color: #94a3b8; /* Slate 400 */
+  margin-bottom: 3rem;
+  max-width: 48rem; /* 3xl */
+  margin-left: auto;
+  margin-right: auto;
+}
