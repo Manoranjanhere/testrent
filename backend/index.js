@@ -8,8 +8,10 @@ import loginRouter from "./routes/loginRoute.js";
 import registerRouter from "./routes/registerRoute.js"; 
 import contactRoute from "./routes/contactRoute.js";
 import path from "path";
-
+import { fileURLToPath } from "url";
 const app = express();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 app.use(cors({ credentials: true, origin: true }));
 dotenv.config({ path: "./config/config.env" });
 
